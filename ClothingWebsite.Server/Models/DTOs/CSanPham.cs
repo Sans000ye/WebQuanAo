@@ -36,12 +36,10 @@ namespace ClothingWebsite.Server.Models.Converter
         {
             return new SanPham
             {
-                // Map properties from CSanPham to SanPham
-                // Example:
                 MaSanPham = cSanPham.MaSanPham,
                 TenSanPham = cSanPham.TenSanPham,
                 Gia = cSanPham.Gia,
-                // Add other property mappings as needed
+
             };
         }
     }

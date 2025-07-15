@@ -22,36 +22,50 @@ namespace AuthAPI.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequest req)
+        public async Task<IActionResult> Register([FromBody] LoginRegisterRequest req)
         {
             if (await _context.TaiKhoans.AnyAsync(u => u.Username == req.Username))
                 return BadRequest(new { message = "Username đã tồn tại" });
 
+            var lastAccount = await _context.TaiKhoans
+                .OrderByDescending(t => t.MaTaiKhoan)
+                .FirstOrDefaultAsync();
+
+            int nextNumber = 1;
+            if (lastAccount != null && lastAccount.MaTaiKhoan.StartsWith("TK"))
+            {
+                string numberPart = lastAccount.MaTaiKhoan.Substring(2);
+                if (int.TryParse(numberPart, out int lastNumber))
+                {
+                    nextNumber = lastNumber + 1;
+                }
+            }
+            string newMaTaiKhoan = $"TK{nextNumber:D3}";
             var user = new TaiKhoan
             {
-                MaTaiKhoan = Guid.NewGuid().ToString(),
+                MaTaiKhoan = newMaTaiKhoan,
                 Username = req.Username,
                 Password = req.Password,
-                QuyenTaiKhoan = 0 // hoặc set quyền mặc định
+                QuyenTaiKhoan = 2
             };
 
+            user.Password = user.Hashed_Password;
             _context.TaiKhoans.Add(user);
             await _context.SaveChangesAsync();
-
-            return Ok(new { message = "Đăng ký thành công" });
+            return Ok(new { message = "Đăng ký thành công", MaTaiKhoan = newMaTaiKhoan });
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest req)
+        public async Task<IActionResult> Login([FromBody] LoginRegisterRequest req)
         {
-            var user = await _context.TaiKhoans
-                .FirstOrDefaultAsync(u => u.Username == req.Username && u.Password == req.Password);
+            var hasher = new HashPassword();
+            string hashedPassword = hasher.HashSHA256(req.Password);
 
+            var user = await _context.TaiKhoans
+                .FirstOrDefaultAsync(u => u.Username == req.Username && u.Password == hashedPassword);
             if (user == null)
                 return Unauthorized(new { message = "Tài khoản hoặc mật khẩu không đúng" });
-
             return Ok(new { message = "Đăng nhập thành công" });
         }
-
     }
 }

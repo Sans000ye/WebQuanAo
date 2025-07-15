@@ -71,7 +71,7 @@ namespace ClothingWebsite.Server.Controllers
                 query = query.Where(p => p.MaSanPham == filter.MaSanPham);
 
             if (!string.IsNullOrWhiteSpace(filter.TenSanPham))
-                query = query.Where(p => p.TenSanPham.Contains(filter.TenSanPham));
+                query = query.Where(p => p.TenSanPham != null && p.TenSanPham.Contains(filter.TenSanPham));
 
             if (filter.MaLoai != 0)
                 query = query.Where(p => p.MaLoai == filter.MaLoai);
@@ -86,7 +86,7 @@ namespace ClothingWebsite.Server.Controllers
                 query = query.Where(p => p.MaStyle == filter.MaStyle);
 
             if (!string.IsNullOrWhiteSpace(filter.HinhAnh))
-                query = query.Where(p => p.HinhAnh == filter.HinhAnh);
+                query = query.Where(p => p.HinhAnh != null && p.HinhAnh == filter.HinhAnh);
 
             if (filter.MinGia.HasValue)
                 query = query.Where(p => p.Gia >= filter.MinGia.Value);
