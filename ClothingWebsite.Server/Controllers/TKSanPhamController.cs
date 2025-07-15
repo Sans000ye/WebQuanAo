@@ -1,4 +1,5 @@
 ﻿using ClothingWebsite.Server.Models;
+using ClothingWebsite.Server.Models.Domains;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

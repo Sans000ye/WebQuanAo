@@ -1,9 +1,8 @@
-﻿using ClothingWebsite.Server.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 
-namespace ClothingWebsite.Server.Models;
+namespace ClothingWebsite.Server.Models.Domains;
 
 public partial class SanPhamKhachHang
 {

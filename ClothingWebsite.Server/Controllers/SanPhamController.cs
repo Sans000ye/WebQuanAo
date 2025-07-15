@@ -2,19 +2,15 @@
 using ClothingWebsite.Server.Models;
 using Microsoft.EntityFrameworkCore;
 using ClothingWebsite.Server.Models.Converter;
+using ClothingWebsite.Server.Models.Domains;
 
 namespace ClothingWebsite.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SanPhamController : ControllerBase
+    public class SanPhamController(QuanAoContext context) : ControllerBase
     {
-        private readonly QuanAoContext _context;
-
-        public SanPhamController(QuanAoContext context)
-        {
-            _context = context;
-        }
+        private readonly QuanAoContext _context = context;
 
         [HttpGet("GetAll")]
         public IActionResult GetAll()

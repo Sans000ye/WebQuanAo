@@ -1,4 +1,4 @@
-﻿namespace ClothingWebsite.Server.Models
+﻿namespace ClothingWebsite.Server.Models.Filters
 {
     public class FilterCriteria
     {

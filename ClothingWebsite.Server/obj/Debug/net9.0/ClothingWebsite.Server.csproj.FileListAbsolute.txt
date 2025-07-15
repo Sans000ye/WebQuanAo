@@ -682,3 +682,16 @@ C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite-master\Clothi
 C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite-master\ClothingWebsite\ClothingWebsite.Server\obj\Debug\net9.0\Clothing.42B31CAE.Up2Date
 C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite-master\ClothingWebsite\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.genruntimeconfig.cache
 C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite-master\ClothingWebsite\ClothingWebsite.Server\obj\Debug\net9.0\ref\ClothingWebsite.Server.dll
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.csproj.AssemblyReference.cache
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\spa.proxy.json
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.AssemblyInfoInputs.cache
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.AssemblyInfo.cs
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.csproj.CoreCompileInputs.cache
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.sourcelink.json
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.dll
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\refint\ClothingWebsite.Server.dll
+C:\Users\vuong\Desktop\All Project\Thinh\WebQuanAo\ClothingWebsite.Server\obj\Debug\net9.0\ClothingWebsite.Server.pdb

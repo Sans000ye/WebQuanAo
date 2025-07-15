@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ClothingWebsite.Server.Models.Domains;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClothingWebsite.Server.Models;

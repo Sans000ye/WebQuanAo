@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 
 
-namespace ClothingWebsite.Server.Models;
+namespace ClothingWebsite.Server.Models.Domains;
 
 public partial class SanPham
 {

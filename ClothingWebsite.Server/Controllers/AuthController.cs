@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ClothingWebsite.Server.Data;
 using ClothingWebsite.Server.DTOs;
+using ClothingWebsite.Server.Models.Domains;
 
 
 namespace AuthAPI.Controllers

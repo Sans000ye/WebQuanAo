@@ -1,4 +1,6 @@
-﻿namespace ClothingWebsite.Server.Models.Converter
+﻿using ClothingWebsite.Server.Models.Domains;
+
+namespace ClothingWebsite.Server.Models.Converter
 {
     public class CSanPham
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace ClothingWebsite.Server.Models;
+namespace ClothingWebsite.Server.Models.Domains;
 
 public partial class MauSanPham
 {

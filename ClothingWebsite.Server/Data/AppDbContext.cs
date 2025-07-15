@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ClothingWebsite.Server.Models;
+using ClothingWebsite.Server.Models.Domains;
 
 
 namespace ClothingWebsite.Server.Data
